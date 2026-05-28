@@ -12,6 +12,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import Jogador1 from './components/Jogador1';
 import Jogador2 from './components/Jogador2';
 import Jogador3 from './components/Jogador3';
+import Atividade from './components/Atividade';
 
 //Cria o Drawer
 const Drawer = createDrawerNavigator();
@@ -45,6 +46,13 @@ export default function APP() {
           name="3 Jogadores"
           //componente que será aberto
           component={Jogador3}
+
+        />
+        <Drawer.Screen
+          // nome que aparece no menu
+          name="atividade"
+          //componente que será aberto
+          component={Atividade}
 
         />
       </Drawer.Navigator>
